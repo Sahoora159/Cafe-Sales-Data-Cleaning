@@ -18,7 +18,7 @@ Identify and resolve data quality issues in a transactional sales dataset while 
 | Invalid zero-quantity transactions | 479 rows | Transactions with no items purchased |
 | Free/promotional items | 5 rows | Price_Per_Unit = 0, required special handling |
 
-## 🛠️ Cleaning Process
+##  Cleaning Process
 
 1. **Standardized inconsistent placeholders** — converted "UNKNOWN" text entries to proper NULL values for accurate detection
 2. **Fixed math mismatches** — recalculated `Total_Spent` using `Quantity × Price_Per_Unit` wherever both values were present but the total didn't match
